@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://kit.fontawesome.com/43f5da347e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <title>Music App</title>
+</head>
+
+<body>
+
+<!-- nav-bar -->
+    <div class="nav">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/168px-Spotify_logo_without_text.svg.png?20160123212544"
+                alt="logo" class="logo-img">
+            <p>Potify</p>
+        </div>
+        <div class="logo-content">
+            <a href="#">Home</a>
+            <a class="link"  href="#">About</a>
+        </div>
+        <div class="about">
+            <p>This App is Made by Altaf by using HTML,CSS and Javascript</p>
+        </div>
+      
+    </div>
+   
+<!-- main -->
+    <div class="main">
+        <div class="main-content">
+            <h2>Best of  <em>20's</em>  Music</h2>
+            <div class="music-list">
+                <div class="song">
+                    <img src="https://1.bp.blogspot.com/-s4Kw_cWe0f4/WltT6oPdQUI/AAAAAAAAnMI/zZjHloY37uk3ljFXAlA3Ij8yyhWMdhaQQCEwYBhgL/s320/Padmavati-First-Look-Poster-11.jpg" alt="">
+                    <p class="song-name">Binte Dil(Padmaavat)</p>
+                    <p>03:12</p>
+                    <i class="fa-regular fa-circle-play play-btn" data-song-number="0"></i>
+                </div>
+                <div class="song"><img src="https://www.123sold.in/uploads/product-images/2020/10/13/25829/large/the-trendsetter-blue-eyes-honey-singh-tsvd-4105-condition-85-90-dvd-video-disc-1.jpg" alt="">
+                    <p class="song-name">Blue Eyes YO Yo Honey Singh</p>
+                    <p>03:41</p>
+                    <i class="fa-regular fa-circle-play play-btn" data-song-number="1"></i>
+                </div>
+                <div class="song"><img src="https://m.media-amazon.com/images/I/71CSzlUC0aL._SX425_.jpg" alt="">
+                    <p class="song-name">Brown Rang Interbnational Villager</p>
+                    <p>02:59</p>
+                    <i class="fa-regular fa-circle-play play-btn" data-song-number="2"></i>
+                </div>
+                <div class="song"><img src="https://i1.sndcdn.com/artworks-ZkscXyAye1cfYCgf-0gkD0g-t500x500.jpg" alt="">
+                    <p class="song-name">Dil ko Karaar Aaya</p>
+                    <p>03:51</p>
+                    <i class="fa-regular fa-circle-play play-btn" data-song-number="3"></i>
+                </div>
+                <div class="song"><img src="https://c.saavncdn.com/493/Kesariya-Audio-Teaser-From-Brahmastra--Hindi-2022-20220414173718-500x500.jpg" alt="">
+                    <p class="song-name">kesariya</p>
+                    <p>04:28</p>
+                    <i class="fa-regular fa-circle-play play-btn" data-song-number="4"></i>
+                </div>
+                <div class="song"><img src="https://downloads4djs.co.in/wp-content/uploads/2017/07/Kya-Mujhe-Pyaar-Hai-Flipsyd.jpg" alt="">
+                    <p class="song-name">Kya Muje Pyar Hai--KK</p>
+                    <p>04:46</p>
+                    <i class="fa-regular fa-circle-play play-btn" data-song-number="5"></i>
+                </div>
+                <div class="song"><img src="https://bajikaraoke.com/image/cache/catalog/karaoke/karaoke_2020/atif_aslam/pehli_nazar_main-228x228.png" alt="">
+                    <p class="song-name">Pheli Nazar Mein</p>
+                    <p>05:13</p>
+                    <i class="fa-regular fa-circle-play play-btn" data-song-number="6"></i>
+                </div>
+                <div class="song"><img src="https://c.saavncdn.com/975/Gangster-Hindi-2006-20221214104259-500x500.jpg" alt="">
+                    <p class="song-name">Tu Hi Meri Shab Hai</p>
+                    <p>06:29</p>
+                    <i class="fa-regular fa-circle-play play-btn" data-song-number="7"></i>
+                </div>
+                <div class="song"><img src="https://c.saavncdn.com/128/Bajrangi-Bhaijaan-Hindi-2015-20230110110355-500x500.jpg" alt="">
+                    <p class="song-name">Tu Jo Mila</p>
+                    <p>04:04</p>
+                    <i class="fa-regular fa-circle-play play-btn" data-song-number="8"></i>
+                </div>
+                <div class="song"><img src="https://c.saavncdn.com/465/Zindagi-Do-Pal-Ki-K-K-All-Time-Hits-Hindi-2022-20220601131000-500x500.jpg" alt="">
+                    <p class="song-name">Zindagi Do Pal Ki</p>
+                    <p>04:17</p>
+                    <i class="fa-regular fa-circle-play play-btn" data-song-number="9"></i>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+   
+<!-- bottom -->
+    <div class="music-player">
+        <div class="music-bar">
+            <p class="currentTime">0:00</p>
+            <input class="range" type="range" min="0" max="100" value="0" step="1">
+            <p class="songDuration">0:00</p>
+        </div>
+        <div class="iframe">
+            <iframe src="https://giphy.com/embed/FwDvNgZRhIGTu6xwl3" width="10%" height="5%" style="position:absolute" frameBorder="0" class="giphy-embed beat"></iframe>
+        </div>
+        <div class="music-icons">
+            <i class="fa-solid fa-backward-step backward-btn"></i> 
+            <i class="fa-solid fa-circle-pause playAndpause-btn"></i> 
+            <!-- <i class="fa-solid fa-circle-play"></i>  -->
+            <i class="fa-solid fa-forward-step forward-btn"></i>
+        </div>
+    </div>
+</body>
+
+</html>
